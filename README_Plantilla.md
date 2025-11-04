@@ -5,22 +5,26 @@
 
 ## **`Integrante/s`**
 
-- `Nombre 1`  
-- `Nombre 2`
+- `Abril Avalos`  
+- `Eliseo Biset`
 
 ## **`Objetivo`**
 
-`Breve descripción del propósito del proyecto. Completar una vez definido el proyecto.`
+`Crear un invernadero automatizado.`
 
 ## **`Descripción del Proyecto`**
 
-`Explicar en qué consiste y qué se busca lograr. Completar una vez definido el proyecto.`
+`Crear un sistema para un invernadero automatico que, haga titilar un LED cuando haya mucha temperatura, que prenda una bombilla cuando no haya luz y que activa aspersores cunado no hay suficiente humedad.`
 
 ## **`Componentes`**
 
-- `Componente 1`  
-- `Componente 2`  
-- `Componente 3`
+- `LED`  
+- `Bombilla`  
+- `Recistencia`
+- `Sensor de humedad`  
+- `Sensor de temeperatura`
+- `LDR`
+- `Servo`
 
 `Completar una vez definido el proyecto.`
 
@@ -34,15 +38,9 @@
 
 ## **`Etapas del proyecto`**
 ### Etapa 1:
-- `Acción 1`
-- `Acción 2`
+- `Conectar bombilla a un boton`
+- `Conectar aspersores a un boton`
 
 ### Etapa 2:
-- `Acción 1`
-- `Acción 2`
-
-## **`Extras`**
-
-- `Extra 1`  
-- `Extra 2`  
-- `Extra 3`
+- `Conectar LED a un boton (hacer que titile)`
+- `Reemplazar todos los botones por el respectivo sensor`
