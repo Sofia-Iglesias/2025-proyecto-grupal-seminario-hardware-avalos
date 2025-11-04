@@ -20,11 +20,12 @@
 
 - `LED`  
 - `Bombilla`  
-- `Recistencia`
+- `Recistencias x3`
 - `Sensor de humedad`  
 - `Sensor de temeperatura`
 - `LDR`
 - `Servo`
+- `Transistor`
 
 `Completar una vez definido el proyecto.`
 
@@ -44,3 +45,6 @@
 ### Etapa 2:
 - `Conectar LED a un boton (hacer que titile)`
 - `Reemplazar todos los botones por el respectivo sensor`
+
+### Extra:
+- `Agregar un transistor para que la bombilla no explote`
