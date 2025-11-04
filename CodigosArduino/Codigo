@@ -1,0 +1,75 @@
+#include <Servo.h>
+#define MYSERVOPIN 11
+
+const int pinTemp = A1;
+const int pinHum = A4;
+const int pinLuz = A2;
+const int bombilla = 9;
+int luzexterna;
+int nivHum;
+int position = 0;
+int position2 = 180;
+int TempMax = 25;
+int TempMin = 10;
+int led = 7;
+Servo MYSERVO;
+  
+void setup()
+{
+  pinMode(A1, INPUT);
+  pinMode(A4, INPUT_PULLUP);
+  pinMode(A2, INPUT_PULLUP);
+  pinMode(9, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(7, OUTPUT);
+  MYSERVO.attach(11);
+  Serial.begin (9600);
+}
+
+void loop()
+{
+  luzexterna = analogRead(pinLuz);
+  if(luzexterna > 307){ 
+  digitalWrite(bombilla, LOW);
+  }
+  else{
+  digitalWrite(bombilla, HIGH);
+}
+  nivHum = analogRead(pinHum);
+  MYSERVO.write(position);
+  delay(100); 
+  if(nivHum < 700){
+   
+    MYSERVO.write(180);
+    delay (1000);
+    MYSERVO.write(0);
+    delay(1000);
+  }
+  else{
+   
+    MYSERVO.write (0);
+    delay (100);
+  }
+  int lectura = analogRead(pinTemp);
+  float voltaje = lectura * (5.0 / 1023.0); // esta parte la tuve que copiar de una web porque no la entendia muy bien
+  float temp = (voltaje - 0.5) * 100.0; // esta tambien
+  if (temp >= TempMax) {
+  digitalWrite(7, HIGH);
+  delay(100);
+  digitalWrite(7, LOW);
+  delay(100);
+
+  }
+  else if (temp < TempMin){
+     digitalWrite(7, HIGH);
+     delay(100);
+     digitalWrite(7, LOW);
+     delay(100);
+  }
+
+  else{
+    digitalWrite(7, LOW);
+    delay(100);
+  }
+  
+}
