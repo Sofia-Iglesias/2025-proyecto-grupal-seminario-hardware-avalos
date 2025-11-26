@@ -48,3 +48,5 @@
 
 ### Extra:
 - `Agregar un transistor para que la bombilla no explote`
+
+Link a la simulacion del proyecto: 
