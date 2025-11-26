@@ -49,4 +49,4 @@
 ### Extra:
 - `Agregar un transistor para que la bombilla no explote`
 
-Link a la simulacion del proyecto: 
+Link a la simulacion del proyecto: https://www.tinkercad.com/things/6esYBMXrFTh-restored-v1805-invernadero-hardware-version-original-que-ya-no/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fall 
